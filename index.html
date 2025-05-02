@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/style/style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-laptop" id="nav_logo"> Tech cursos</i>
+
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Ver cursos</button>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">O melhor do ensino <span>tech</span></h1>
+
+          <p class="description">
+            Os cursos da Tech cursos preparam você como o que existe de mais
+            atual no mercado.
+          </p>
+
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Conheça nossos cursos </a>
+
+            <a href="tel:+55555555555" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (51) 92342-3243
+            </a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a href="">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img src="src/images/robot-home.png" alt="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Cursos</h2>
+        <h3 class="section-subtitle">Nossas melhores formações</h3>
+
+        <div id="cursos">
+          <div class="curso">
+            <div class="curso-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="curso-title">FullSatck Developer</h3>
+
+            <span class="Curso-description">
+              Domine o desenvolvimento web completo! Aprenda a criar aplicações
+              robustas e modernas, atuando tanto no frontend quanto no backend.
+              Ideal para quem quer ser um desenvolvedor versátil e pronto para
+              qualquer desafio.
+            </span>
+
+            <div class="curso-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="curso-price">
+              <h4><em>10x de</em> R$100,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="curso">
+            <div class="curso-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="curso-title">Beckend Developer</h3>
+
+            <span class="curso-description">
+              Entenda a lógica por trás dos sistemas! Aprenda a construir
+              servidores, bancos de dados e APIs seguras com linguagens como
+              Node.js, Python e SQL. Perfeito para quem gosta de estruturar o
+              que acontece "por trás dos panos".
+            </span>
+
+            <div class="curso-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="curso-price">
+              <h4><em>10x de</em> R$90,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="curso">
+            <div class="curso-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="curso-title">Frontend Developer</h3>
+
+            <span class="curso-description">
+              Aprenda a construir interfaces incríveis com HTML, CSS, JavaScript
+              e frameworks modernos como React. Crie experiências visuais
+              envolventes e responsivas para os usuários.
+            </span>
+
+            <div class="curso-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="curso-price">
+              <h4><em>10x de</em> R$90,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="curso">
+            <div class="curso-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="curso-title">UX Design</h3>
+
+            <span class="curso-description">
+              Crie experiências que encantam! Aprenda os fundamentos do design
+              centrado no usuário, pesquisa de usabilidade, prototipagem e
+              ferramentas como Figma. Transforme ideias em soluções intuitivas e
+              eficientes.
+            </span>
+
+            <div class="curso-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="curso-price">
+              <h4><em>10x de</em> R$80,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="src/images/robot-testimonials.png" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img
+                src="src/images/avatar .png"
+                class="feedback-avatar"
+                alt=""
+              />
+
+              <div class="feedback-content">
+                <p>
+                  <strong>João Ricardo, 31 anos, Recife (PE)</strong>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Fiz o curso de UX Design e fiquei impressionado com a
+                  qualidade do conteúdo! O material é super atualizado, e os
+                  exercícios práticos me ajudaram a montar um portfólio
+                  completo. A didática dos instrutores é excelente. Recomendo
+                  demais a Tech Cursos!"
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img
+                src="src/images/avatar .png"
+                class="feedback-avatar"
+                alt=""
+              />
+
+              <div class="feedback-content">
+                <p>
+                  <strong>Marina Lopes, 27 anos, São Paulo (SP)</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Transformador! O curso de Fullstack da Tech Cursos me deu a
+                  base e a confiança que eu precisava para entrar no mercado de
+                  tecnologia. As aulas são diretas, práticas e os projetos
+                  ajudam muito a fixar o conteúdo. Hoje estou trabalhando como
+                  desenvolvedor júnior graças ao que aprendi aqui!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer_items">
+        <span id="copyright"> &copy 2025 @Arthurlopesc </span>
+
+        <div class="social-media-buttons">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+  </body>
+</html>
